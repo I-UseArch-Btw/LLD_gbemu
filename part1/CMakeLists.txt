@@ -1,7 +1,12 @@
 project(gbemu C)
 
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
+cmake_minimum_required(VERSION 4.0.3 FATAL_ERROR)
+# cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
+project(GameboyEmulator VERSION 1.0 LANGUAGES C)
+#Enable modern policies
+cmake_policy(VERSION 4.0.3)
 
 ###############################################################################
 # Set build features
