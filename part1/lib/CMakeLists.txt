@@ -20,5 +20,4 @@ target_link_libraries(emu
     PUBLIC
         ${SDL2_LIBRARY}
         ${SDL2_TTF_LIBRARY}
-)
-# sdfdsf
+) 
