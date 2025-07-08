@@ -2,7 +2,7 @@
 
 #include <common.h>
 
-typedef struct cpu_registers
+typedef struct 
 {
     u8 a;
     u8 f;
@@ -14,9 +14,9 @@ typedef struct cpu_registers
     u8 l;
     u16 pc;
     u16 sp;
-};
+}cpu_registers;
 
-typedef struct cpu_context
+typedef struct 
 {
     cpu_registers regs;
 
@@ -28,7 +28,7 @@ typedef struct cpu_context
     bool halted;
     bool stepping;
     
-};
+}cpu_context;
 
 
 
